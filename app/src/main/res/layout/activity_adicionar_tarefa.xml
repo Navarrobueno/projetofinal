@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AdicionarTarefaActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título da Tarefa" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição da Tarefa" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Data de Criação: "
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecionar Data de Finalização" />
+
+    <TextView
+        android:id="@+id/txtDataselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Data não selecionada"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Adicionar Tarefa" />
+</LinearLayout>
